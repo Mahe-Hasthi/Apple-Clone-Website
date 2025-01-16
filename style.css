@@ -1,0 +1,694 @@
+/* General l Reset */
+.logo {
+    width: 100px;  /* Adjust the width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    display: block; /* Ensures it behaves like a block-level element */
+    margin: 0 auto; /* Centers the logo horizontally */
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    background-color:white;
+    color: #f5f5f7;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #171717;
+  }
+  
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+    
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  
+  .navbar .left,
+  .navbar .right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .left i {
+    font-size: 20px;
+    margin: 0 20px;
+    text-align: center;
+  }
+  
+  .navbar .right i {
+    font-size: 20px;
+    margin-left: 20px;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+  }
+  
+  .hero .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .hero .buttons a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-align: center;
+    min-width: 120px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .hero .buttons .learn-more {
+    background-color: #0071e3;
+    color: #fff;
+  }
+  
+  .hero .buttons .buy {
+    border: 2px solid #0071e3;
+    color:white;
+  }
+  
+  .hero-image {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 0px;
+   
+  }
+  
+  /* Gradient Background */
+  .theme-dark {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(
+      180deg,
+      rgb(12, 18, 71),
+      rgb(40, 51, 125) 28%,
+      rgb(80, 93, 173) 46%,
+      rgb(125, 142, 209) 60%,
+      rgb(174, 188, 230) 75%,
+      rgb(239, 236, 255) 90%,
+      rgb(255, 255, 255)
+    );
+    color: white;
+  }
+  .theme-dark {
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  .theme-dark h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .theme-dark p {
+    font-size: 24px;
+    margin: 10px 0 20px;
+  }
+  
+  .theme-dark.buttons {
+    display: flex; /* Use Flexbox */
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Add space between buttons */
+    margin-bottom: 50px;
+  }
+  
+  .theme-dark .buttons a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    min-width: 100px; /* Ensures button sizes are consistent */
+  }
+  
+  .theme-dark .buttons .learn-more {
+      background-color: white;
+      width: 100px;
+      color: black;
+     
+  }
+  
+  .theme-dark .buttons .buy {
+      border: 2px solid white;
+      color:white;
+      width: 100px;
+      margin-left: 10px;
+    
+   
+   
+   
+  }
+
+
+  .watch-theme {
+    
+    margin-top: 50px;
+    text-align: center;
+    padding: 50px;
+}
+
+.logo {
+    font-size: 50px;
+    color: rgb(31, 16, 16);
+    margin-bottom: 20px;
+}
+
+.watch-theme h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.watch-theme p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+
+.buttons {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.buttons a {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #0071e3; /* Light Teal */
+    color:white;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+
+
+  
+  
+  /* Container to hold the video */
+.video-container {
+    position: relative; /* Keep it in the normal document flow */
+    width: 100%; /* Full width of the container */
+    height: 100%; /* Full height of the container */
+    background-color:#f5f5f7; /* Optional background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Video styling */
+video {
+    width: 100%; /* Stretch the video to fit the width of the container */
+    height: 100%; /* Stretch the video to fit the height of the container */
+    object-fit: cover; /* Ensure the video covers the container without distortion */
+   
+}
+
+
+/* General Flexbox Container */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* General Card Styling */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 20px);
+    border: 1px solid #ddd;
+    padding: 20px;
+    color: #000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    background-color: white;
+}
+
+/* Individual Card Customizations */
+.card-1 {
+    background-color:#f5f5f7;
+    color: black;
+   
+  }
+  .card-1 p {
+    font-size: 26px; /* Adjust font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Spacing between lines */
+    margin: 10px 0; /* Add some spacing around the paragraph */
+    font-family: 'Roboto', sans-serif; /* Font style */
+  
+  }
+    
+    
+    
+  
+  .card-2 {
+    background-color: #e6ffe6;  /* Light Green */
+    font-size: 20px; /* Set font size */
+    image-resolution: 10px;
+}
+
+    
+
+.card-2 p {
+    font-size: 26px; /* Adjust font size */
+    color: #333; /* Text color */
+    line-height: 1.5; /* Spacing between lines */
+    margin: 10px 0; /* Add some spacing around the paragraph */
+    font-family: 'Roboto', sans-serif; /* Font style */
+}
+.card-2 h1 span{
+    color: #0071e3;  /* Light Pink */
+    font-weight: bold;  /* Optional: Make the text bold */
+}
+.promo-text {
+    font-size: 18px;  /* Adjusts the font size to 18px */
+    background: linear-gradient(90deg, #58a2da, #df8758);  /* Creates a horizontal gradient */
+    -webkit-background-clip: text;  /* Ensures the gradient applies only to the text */
+    color: transparent;  /* Makes the text color transparent to show the gradient */
+    font-weight: bold;  /* Makes the text bold for better visibility */
+    text-align: center;  /* Centers the text horizontally */
+    margin-top: 10px;  /* Adds space above the text */
+    margin-bottom: 10px;  /* Adds space below the text */
+    font-family: 'Roboto', sans-serif;  /* Applies the Roboto font */
+}
+.card-2 img {
+  width: 40%; /* Set the width of the image relative to the container */
+  max-width: 300px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 10px 0; /* Add some spacing around the image */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  object-fit: cover; /* Ensure the image fits nicely within the specified size */
+}
+
+
+
+
+
+
+
+/* Card 3 Styling */
+.card-3 {
+    background-color: black; /* Light Red */
+    margin-bottom:10px;
+}
+/* Style for the h1 element */
+.card-3 h1 {
+  font-size: 42px; /* Set the font size */
+  color: #fff0f0; /* Choose a custom color */
+  font-family: 'Roboto', sans-serif; /* Set the font family */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Style for the p element */
+.card-3 p {
+  font-size: 20px; /* Set the font size */
+  color: #fff0f0; /* Set the text color */
+  font-family: "Montserrat", serif; /* Use Montserrat font */
+  text-align: center; /* Center-align the text */
+  margin: 5px 0; /* Add vertical spacing */
+  line-height: 1.5; /* Increase spacing between lines */
+  font: weight 1px;;
+}
+
+.montserrat-text {
+  font-family: "Montserrat", serif; /* Use Montserrat font */
+  font-optical-sizing: auto; /* Ensure text adjusts for readability */
+  font-weight: 400; /* Adjust weight (e.g., 400 for regular) */
+  font-style: normal; /* Set font style (e.g., normal or italic) */
+}
+
+
+/* Image styling */
+.card-3 img {
+  width: 60%; /* Set the width of the image relative to the container */
+  max-width: 300px; /* Limit the maximum width of the image */
+  height: auto; /* Maintain the aspect ratio */
+  margin: 10px 0; /* Add some spacing around the image */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  object-fit: cover; /* Ensure the image fits nicely within the specified size */
+}
+
+
+
+   
+
+
+.card-4 {
+    background-color:#f5f5f7  /* Light Yellow */
+}
+.card-4h1 {
+  font-size: 42px; /* Set the font size */
+  color:black; /* Choose a custom color */
+  font-family: 'Roboto', sans-serif; /* Set the font family */
+  font-weight: bold; /* Make the text bold */
+  text-align: center; /* Center-align the text */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Style for the p element */
+.card-4 p {
+  font-size: 20px; /* Set the font size */
+  color:black; /* Set the text color */
+  font-family: "Montserrat", serif; /* Use Montserrat font */
+  text-align: center; /* Center-align the text */
+  margin: 5px 0; /* Add vertical spacing */
+  line-height: 1.5; /* Increase spacing between lines */
+  font: weight 1px;;
+}
+.card-3 img {
+  max-width: 50%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Space above the image */
+  border-radius: 10px; /* Rounded corners for the image */
+}
+
+.card-5 {
+  background-image: url('https://assets.onecompiler.app/42rqwwqvz/4367rx2np/aipod.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.card h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.learn-more,
+.buy {
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.learn-more {
+  background-color: #007aff;
+  color: white;
+  border: none;
+}
+
+.learn-more:hover {
+  background-color:#007aff;
+}
+
+
+.card-6{
+  background-color: #f5f5f7 ;
+
+  .card-6 {
+    background-color: #f5f5f7;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-6 h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-6 p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.card-6 .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card-6 .buttons a {
+    background-color: #0071e3;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-6 .buttons a:hover {
+    background-color: #005bb5;
+}
+
+.card-6 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+}
+
+
+
+/* Image Styling */
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/* Try Free Button */
+
+
+/* Slider Container */
+.slider-container {
+  position: relative;
+  width: 100%; /* Ensures it takes full width */
+  max-width: 100%; /* Ensures it doesn't exceed the screen width */
+  margin: auto;
+  overflow: hidden;
+  height: 700px;
+}
+
+/* The actual slider */
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensures the slider fills the entire width */
+}
+
+/* Each slide */
+.slide {
+  flex: 0 0 100%; /* Makes each slide take up 100% of the width */
+  height: auto; /* Maintains the aspect ratio */
+  display: block;
+}
+
+.slide img {
+  width: 100%; /* Makes the image inside the slide stretch to fill the slide */
+  height: auto; /* Keeps the image's aspect ratio */
+  object-fit: cover; /* Ensures the image covers the slide without distortion */
+}
+
+
+/* Navigation Arrows */
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+  .slider-container {
+    max-width: 100%;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #827e7e;
+  padding: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center; /* Center-aligns all the text */
+  margin-top: 5px;
+}
+
+.content p {
+  margin: 0;
+  padding: 0.5rem 0;
+  text-align: center; /* Ensures individual paragraphs are also centered */
+}
+
+.content a {
+  color: #61666b;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+.content p a {
+  font-weight: bold;
+}
+
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color:#f5f5f7;
+  padding: 20px;
+  color: #61666b;
+ 
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 10px;
+  
+}
+
+footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 2rem;
+  background-color: #555; /* Gray background for each column */
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.footer-column h3 {
+  color:#2e2e2e; /* Gold color for headings */
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  color:#6f6f70; /* Light gray color for list items */
+}
+
+.footer-column ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color:#6f6f70; /* Light gray color for links */
+  font-size: 1rem;
+}
+
+.footer-column ul li a:hover {
+  color:black; /* Gold color on hover for links */
+}
+
+.footer-bottom {
+  margin-left: 250px;
+  text-align: center;
+  padding: 10px;
+  background-color: #ddd;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #000;
+}
